@@ -1,6 +1,6 @@
 # Mikrotik-RB2011-UiAS-2HnD-IN-OpenWRT-Installation-guide
-This is a guide that helps us to install openwrt into a Mikrotik device
-We are going to mainly focus on this guide  https://openwrt.org/toh/mikrotik/rb2011
+This is a guide that helps you to install OpenWRT into a Mikrotik device
+We are mainly focus on this guide  https://openwrt.org/toh/mikrotik/rb2011
 
 We can also use this guide as reference
 ```
