@@ -8,6 +8,7 @@ https://openwrt.org/toh/mikrotik/rb2011uias         this guide is a lot harder, 
 ```
 
 **1. Setup DHCP Server with TFTP Boot.**
+
 Set your PC to static IP of 192.168.1.1/24. Note that the initramfs file should be in the directory indicated by the command.
 
 ```
@@ -21,9 +22,10 @@ If your tftp-root folder is in /, use /tftpboot/
 
 This is a long one line code, please input them at once. 
 
-**2. Connect PC to ethernet port 1.**
+**2. Connect PC to Ethernet port 1.**
 
 **3. Boot from DHCP.**
+
 Power off router, and hold reset while powering on. Wait 20 seconds until you see PC send file. Release reset, and remain connected to ethernet port until you see Router report Openwrt hostname.
 On the dhcp long command window, you will see something like this 
 ```
@@ -269,10 +271,12 @@ At this point, you are running OpenWRT in the RAM.
 **4. Connect PC to a different ethernet port.**
 
 **5. Logon to OpenWrt webGUI.**
+
 Login to 192.168.1.1 and get ready to flash Sysupgrade Mikrotik nand-large sysupgrade.bin.
 You may download the sysupgradefile from this repo and continue with the flash process. 
 
 **6. Sysupgrade Mikrotik nand-large sysupgrade.bin.**
+
 Simplely upload the image to router, and it will start to flash to nand. 
 ```
 root@OpenWrt:/# Watchdog handover: fd=3
@@ -424,6 +428,7 @@ At this point tho, the serial port has been disabled, it is normal. you may cont
 If you make a mistake, repeat netboot and try again. 
 
 **7.You will need to plug in to any of the fast ethernet port in order to reach the 192.168.1.1.**
+
 Not sure about why, you may need to configure something on the Luci webGUI.
 
 **8.You are all Done! Enjoy OpenWRT on your MT RB2011.** 
